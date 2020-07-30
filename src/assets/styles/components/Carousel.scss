@@ -1,0 +1,55 @@
+.carousel {
+	overflow: scroll;
+	padding-left: 30px;
+	width: 100%;
+	position: relative;
+}
+
+.carousel__container {
+	transition: 450ms -webkit-transform;
+	transition: 450ms transform;
+	transition: 450ms transform, 450ms -webkit-transform;
+	font-size: 0;
+	white-space: nowrap;
+	margin: 70px 0px;
+	padding-bottom: 10px;
+}
+
+.carousel__container:hover .carousel-item {
+	opacity: 0.3;
+}
+
+.carousel__container:hover .carousel-item:hover {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	opacity: 1;
+}
+
+
+.carousel::-webkit-scrollbar {
+	width: 10px;
+	background-color: #a52882;
+	border-radius: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px #a52882;
+	box-shadow: inset 0 0 6px #a52882;
+	border-radius: 10px;
+	background-color: #cccccc73;
+}
+.carousel::-webkit-scrollbar-corner {
+	display: none;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #590d53;
+	background-image: -webkit-linear-gradient(
+		90deg,
+		transparent,
+		rgba(0, 0, 0, 0.4) 50%,
+		transparent,
+		transparent
+	);
+}
