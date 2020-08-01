@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 /* eslint-disable react/jsx-indent-props */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/alt-text */
@@ -75,7 +76,7 @@ const Login = (props) => {
 						</div>
 					</section>
 					<p className='login__container--register'>
-						No tienes ninguna cuenta
+						<label style='display:block'>No tienes ninguna cuenta</label>
 						<Link to='/register'>Regístrate</Link>
 					</p>
 				</section>
