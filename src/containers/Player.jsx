@@ -3,6 +3,8 @@
 /* eslint-disable no-tabs */
 /* eslint-disable react/jsx-indent */
 /* eslint-disable indent */
+// useLayoutEffect es sincrónico
+// useEffect es asincrónnico
 import React, { useLayoutEffect } from 'react';
 import { connect } from 'react-redux';
 
